@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Aaliya Begum | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #252538;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #252545;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #c5b8ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #c5b8ff;
+        }
+
+        .hero {
+            min-height: 420px;
+            background: linear-gradient(135deg, #252545, #6554a4);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .hero a {
+            background: #c5b8ff;
+            color: #252545;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        section h2 {
+            color: #51418c;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill,
+        .project {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+        }
+
+        .skill {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .project h3 {
+            color: #51418c;
+            margin-bottom: 10px;
+        }
+
+        .education {
+            background: #ece9f8;
+        }
+
+        .contact a {
+            color: #51418c;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #252545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Al Aaliya</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Hi, I'm Al Aaliya Begum</h1>
+        <p>Student | Mathematics | Statistics | Data Science</p>
+        <a href="#about">Explore My Portfolio</a>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Al Aaliya Begum, a student at CHRIST University with an
+            interest in mathematics, statistics, programming and data science.
+            I enjoy learning new technologies, solving problems and working
+            on projects that help me apply what I learn in the classroom.
+            I am continuously developing my technical and analytical skills
+            through academic projects and practical experience.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Statistics</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Information Contradiction Finder</h3>
+                <p>
+                    A proposed AI-based application that compares two
+                    statements and identifies whether they contradict
+                    each other, support each other or are unrelated.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Rainwater Harvesting Model</h3>
+                <p>
+                    A mathematical modelling project that studies
+                    rainwater collection, monthly water demand and
+                    storage capacity using differential and numerical
+                    modelling concepts.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Financial Trends</h3>
+                <p>
+                    A data analysis project exploring student employment,
+                    working hours, expenses and monthly financial balance.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2>Education</h2>
+
+        <h3>CHRIST University</h3>
+        <p>Undergraduate Student</p>
+        <p>Interested in Mathematics, Statistics and Data Science.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email:
+            <a href="mailto:alaaliyabaig@gmail.com">
+                alaaliyabaig@gmail.com
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/aaliyabegum11" target="_blank">
+                github.com/aaliyabegum11
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Al Aaliya Begum. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
